@@ -1,9 +1,60 @@
-$breakpoints: (
-  phone: 749px,
-  tablet: 768px,
-  desktop: 1024px,
-) !default;
+@import "./_var";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap");
+@import "../fonts/icons.ttf";
 
-$h1-color: #1a2152;
-$h2-color: #14183e;
-$maim-text-color: #5e6282;
+//основна сітка
+._container {
+  max-width: $maxWidthContainer + 8px;
+  margin: 0 auto;
+  @media (max-width: $md1) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2) {
+    max-width: 479px;
+  }
+  @media (max-width: $md3) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+//загальні параметри
+body {
+  font-size: 14px;
+}
+
+//хедер
+.header {
+  &__content {
+    max-width: 1044px;
+    padding: 0px 10px;
+    margin: 0px auto;
+  }
+  &__menu {
+  }
+}
+
+.menu {
+  &__icon {
+  }
+  &__body {
+  }
+  &__list {
+    height: 60px;
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+li {
+  margin: 0px 0px 0px 33px;
+}
+&__link {
+  font-size: 17px;
+  font-weight: 400;
+  color: #212832;
+  transition: width 2s, height 2s, transform 2s;
+}
