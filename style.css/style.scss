@@ -8,7 +8,6 @@ h3 {
   font-weight: inherit;
   font-size: inherit;
 }
-
 ul {
   list-style-type: none;
 }
@@ -24,35 +23,28 @@ body {
   overflow: hidden;
   font-family: Poppins;
   font-weight: 400;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
+//--------------------------------
 ._container {
   max-width: 1160px;
   margin: 0px auto;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   padding: 0px 15px;
   margin: 0px auto;
 }
-
 ._ibg {
   position: relative;
 }
-
 ._ibg img {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
+// ----------header---------------
 .header {
   position: absolute;
   width: 100%;
@@ -60,22 +52,17 @@ body {
   top: 0;
   z-index: 50;
 }
-
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 104px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 @media (max-width: 479px) {
   .header__container {
     min-height: 74px;
   }
 }
+
 .header__menu {
   margin: 0px 0px 0px 223px;
 }
@@ -99,19 +86,13 @@ body {
   margin-left: 15%;
   margin-top: 2%;
 }
-
 .menu {
   padding: 5px 0;
 }
-
 .menu__list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-wrap: wrap;
   display: flex;
 }
-
 .menu__link {
   color: #212832;
   font-family: Sans;
@@ -121,7 +102,6 @@ body {
   line-height: 170%;
   text-decoration: none;
 }
-
 @media (max-width: 479px) {
   .menu__link {
     font-size: 20px;
@@ -130,7 +110,6 @@ body {
 .menu__item:not(:last-child) {
   margin: 0px 65px 0px 0px;
 }
-
 .menu__item_frame {
   border: 1px solid;
   border-color: #212832;
@@ -138,17 +117,16 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-
+//Page---------------------------------
 .page {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-
+.page__main-block {
+}
+//main block----------------------------
 .main-block {
   position: relative;
 }
-
 .main-block__body {
   padding: 184px 0px 191px 0px;
   position: relative;
@@ -159,7 +137,6 @@ body {
 .main-block__body > *:not(:last-child) {
   margin: 0px 0px 28px 0px;
 }
-
 .main-block__image {
   position: absolute;
   width: 94vh;
@@ -167,7 +144,6 @@ body {
   top: 0;
   right: 0;
 }
-
 .main-block__title {
   font-size: 84px;
   font-family: Volkhov;
@@ -177,7 +153,6 @@ body {
   color: #181e4b;
   line-height: 120%;
 }
-
 @media (max-width: 479px) {
   .main-block__title {
     font-size: 42px;
@@ -200,4 +175,8 @@ body {
   color: #df6951;
   text-transform: uppercase;
   line-height: 30px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+// футер--------------------------------
+footer {
+}
