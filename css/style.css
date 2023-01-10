@@ -222,22 +222,69 @@ body {
   margin-top: 15%;
 }
 
-.main-block__image .main-block__plane_anime {
-  margin-left: 17%;
-  padding-bottom: 37%;
-  position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 17%;
+.main-block__anime {
+  display: inline-block;
+  position: relative;
 }
 
+.main-block__anime .main-block__plane_anime {
+  display: inline-block;
+  position: relative;
+  margin-top: 127%;
+  margin-left: 17%;
+  padding-bottom: 37%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 50%;
+  -webkit-animation-name: fly;
+          animation-name: fly;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main-block__anime:hover .main-block__plane_anime {
+  -webkit-animation-play-state: start;
+          animation-play-state: start;
+}
+
+@-webkit-keyframes fly {
+  0% {
+    left: 0px;
+  }
+  60% {
+    top: 150px;
+  }
+  35% {
+    top: 160px;
+  }
+  100% {
+    left: 700px;
+  }
+}
+
+@keyframes fly {
+  0% {
+    left: 0px;
+  }
+  60% {
+    top: 150px;
+  }
+  35% {
+    top: 160px;
+  }
+  100% {
+    left: 700px;
+  }
+}
 .main-block__image .main-block__plane {
-  margin-left: 82%;
-  padding-bottom: 23%;
+  margin-left: 83%;
+  padding-bottom: 22%;
   position: absolute;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 17%;
+  width: 13%;
 }
 
 @media (max-width: 992px) {
