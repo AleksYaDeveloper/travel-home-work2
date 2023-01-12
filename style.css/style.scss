@@ -405,6 +405,7 @@ body {
   padding: 0 0 0 10px;
 }
 .book__photo_card {
+  position: absolute;
   width: 370px;
   height: 400px;
   background-color: #fff;
@@ -443,7 +444,9 @@ body {
   text-align: left;
   margin-left: 3%;
 }
-.book__photo_backgraund {
+.book__photo_background {
+  padding: 0 0 0 0;
+  position: relative;
   border: #000000 3px solid;
   width: 354px;
   height: 367px;
@@ -467,9 +470,10 @@ body {
   font-family: poppins;
 }
 .book__photo_card-rome {
-  margin-left: 35%;
-  margin-bottom: 100%;
-
+  display: flex;
+  justify-content: space-around;
+  gap: 2%;
+  margin-left: 60%;
   position: absolute;
   width: 263px;
   height: 129px;
@@ -482,6 +486,44 @@ body {
     0px 20px 13px rgba(0, 0, 0, 0.01),
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.rome__photo_image_card {
+  margin-top: 10%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.book__photo_card-rome_text_content {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: poppins;
+  letter-spacing: -0, 035em;
+  color: #84829a;
+  margin-top: 10%;
+}
+.book__photo_card-rome_text_content_rome {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: poppins;
+  letter-spacing: -0, 015em;
+  color: #080809;
+  margin-top: 5%;
+}
+.book__photo_card-rome_text_content_completed {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: poppins;
+  letter-spacing: -0, 055em;
+  color: #080809;
+  margin-top: 5%;
+}
+.book__photo_card-rome_text_content_40 {
+  color: #8a79df;
+}
+.book__photo_card-rome_info {
+  justify-content: left;
+  text-align: left;
 }
 // футер--------------------------------
 footer {

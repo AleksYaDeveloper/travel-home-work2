@@ -507,6 +507,7 @@ body {
 }
 
 .book__photo_card {
+  position: absolute;
   width: 370px;
   height: 400px;
   background-color: #fff;
@@ -544,7 +545,9 @@ body {
   margin-left: 3%;
 }
 
-.book__photo_backgraund {
+.book__photo_background {
+  padding: 0 0 0 0;
+  position: relative;
   border: #000000 3px solid;
   width: 354px;
   height: 367px;
@@ -579,8 +582,13 @@ body {
 }
 
 .book__photo_card-rome {
-  margin-left: 35%;
-  margin-bottom: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2%;
+  margin-left: 60%;
   position: absolute;
   width: 263px;
   height: 129px;
@@ -588,4 +596,49 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 468519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 468519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.rome__photo_image_card {
+  margin-top: 10%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.book__photo_card-rome_text_content {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: poppins;
+  letter-spacing: 0, 35em;
+  color: #84829a;
+  margin-top: 10%;
+}
+
+.book__photo_card-rome_text_content_rome {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: poppins;
+  letter-spacing: 0, 15em;
+  color: #080809;
+  margin-top: 5%;
+}
+
+.book__photo_card-rome_text_content_completed {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: poppins;
+  letter-spacing: 0, 55em;
+  color: #080809;
+  margin-top: 5%;
+}
+
+.book__photo_card-rome_text_content_40 {
+  color: #8a79df;
+}
+
+.book__photo_card-rome_info {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
