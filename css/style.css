@@ -373,7 +373,7 @@ body {
 }
 
 .book {
-  padding: 84px 0;
+  padding: 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,7 +517,8 @@ body {
 }
 
 .book__photo_image_card {
-  border: 1px #000000 solid;
+  -webkit-filter: box-shadow 0px 4px 4px rgba 0 0 0 0.25;
+          filter: box-shadow 0px 4px 4px rgba 0 0 0 0.25;
   border-radius: 24px;
 }
 
@@ -546,6 +547,7 @@ body {
 }
 
 .book__photo_background {
+  border-radius: 50%;
   padding: 0 0 0 0;
   position: relative;
   border: #000000 3px solid;
@@ -641,4 +643,78 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   text-align: left;
+}
+
+.testimonials {
+  width: 1037;
+  height: 279;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  gap: 8%;
+}
+
+.testimonials__title {
+  width: 541px;
+  height: 279px;
+  position: relative;
+  margin-left: 0%;
+}
+
+.testimonials__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-right: 3%;
+  border-radius: 5px;
+  width: 504px;
+  height: 245px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 468519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 468519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.testimonials__card-text {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 15px;
+  color: #5e6282;
+  line-height: 32px;
+  margin-top: 13%;
+}
+
+.testimonials__card-text-name {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 18px;
+  color: #5e6282;
+  line-height: 27px;
+}
+
+.testimonials__card-text-sign {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5e6282;
+  line-height: 21px;
+}
+
+.testimonials__photo {
+  width: 50px;
+  height: 50px;
+}
+
+.testimonials__card-info {
+  margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
