@@ -426,20 +426,40 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .service__item {
+  position: relative;
   text-align: center;
-  width: 267px;
+  width: 240px;
   height: 314px;
   background-color: #fff;
   border-radius: 36px;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-left: 8%;
+  padding-right: 8%;
   padding-top: 2%;
+}
+
+.service__item:hover {
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 468519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 468519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.service__item_hover {
+  width: 307px;
+  height: 344px;
+  justify-items: center;
+  padding-left: 2.4%;
+  background-color: #fff;
+}
+
+.service__item_hover:hover {
+  background-image: url(../img/Rectangle\ 157.svg);
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+  background-position-y: 100%;
 }
 
 .service__item_title {
@@ -494,6 +514,18 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 96%;
+}
+
+.destination_img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.destination_img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .book {
@@ -948,7 +980,8 @@ body {
 .input__button {
   text-decoration: none;
   border: none;
-  background-color: #ff7d68;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff946d), to(#ff7d68));
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
