@@ -316,7 +316,7 @@ body {
   position: absolute;
   left: 154;
   top: 936px;
-  z-index: 50;
+  //z-index: 50;
   background: url(../img/Group\ 4.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -333,6 +333,7 @@ body {
   .servise__container {
     display: flex;
     flex-wrap: wrap;
+    //position: relative;
   }
 }
 @media (max-width: 670px) {
@@ -435,12 +436,13 @@ body {
   box-sizing: content-box;
   max-width: 1102px;
   top: 1614px;
-  z-index: 50;
+  //z-index: 50;
 }
 .destination__list {
   display: flex;
   justify-content: center;
 }
+
 .destination__photo-helsinki {
   background-image: url(../img/Decore\ vave.svg);
   background-repeat: no-repeat;

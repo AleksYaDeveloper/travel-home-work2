@@ -379,7 +379,6 @@ body {
   position: absolute;
   left: 154;
   top: 936px;
-  z-index: 50;
   background: url(../img/Group\ 4.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -522,7 +521,6 @@ body {
           box-sizing: content-box;
   max-width: 1102px;
   top: 1614px;
-  z-index: 50;
 }
 
 .destination__list {
